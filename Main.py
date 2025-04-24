@@ -26,7 +26,7 @@ def calculate():
 # Create the main window
 root = tk.Tk()
 root.title("Basic Calculator")
-root.geometry("300x250")
+root.geometry("300x280")  # Increased height to accommodate branding
 root.resizable(False, False)
 
 # Create input fields
@@ -53,6 +53,10 @@ calculate_button.grid(row=3, column=0, columnspan=2, padx=10, pady=10)
 # Create result label
 result_label = tk.Label(root, text="Result: ")
 result_label.grid(row=4, column=0, columnspan=2, padx=10, pady=10)
+
+# Add branding label
+branding_label = tk.Label(root, text="SAAD CREATIONS", font=("Arial", 8, "bold"), fg="#666666")
+branding_label.grid(row=5, column=0, columnspan=2, padx=10, pady=10)
 
 # Start the main loop
 root.mainloop()
